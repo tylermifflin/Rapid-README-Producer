@@ -47,6 +47,11 @@ inquirer
             name: 'github',
         },
         {
+            type: 'input',
+            message: questions[8],
+            name: 'email',
+        },
+    ])
 
 // TODO: Create a function to write README file
 function createReadMe('README.md', data) {
