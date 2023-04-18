@@ -77,7 +77,7 @@ inquirer
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions);
+    inquirer.prompt
 }
 
 // Function call to initialize app
