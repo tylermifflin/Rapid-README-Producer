@@ -31,6 +31,22 @@ inquirer
             message: questions[4],
             name: 'contribution',
         },
+        {
+            type: 'input',
+            message: questions[5],
+            name: 'test',
+        },
+        {
+            type: 'input',
+            message: questions[6],
+            name: 'license',
+        },
+        {
+            type: 'input',
+            message: questions[7],
+            name: 'github',
+        },
+        {
 
 // TODO: Create a function to write README file
 function createReadMe('README.md', data) {
