@@ -69,7 +69,12 @@ inquirer
     ${response.license}
     ## Questions
     If you have any questions, please contact me at ${response.email} or visit my GitHub page at ${response.github}.`;
-    
+        fs.writeFile('README.md', readme, (err) =>
+            err ? console.log(err) : console.log('Success!')
+        );
+    });
+
+
 
 
 
