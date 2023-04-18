@@ -1,9 +1,10 @@
-// TODO: Include packages needed for this application
+// added const for inquirer and fs in order to call and use them in my code to write a README file
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// created a const for the questions array to be used in the inquirer prompt
 const questions = ["What is the title of your project?", "What is the description of your project?", "What are the installation instructions for your project?", "What are the usage instructions for your project?", "What are the contribution guidelines for your project?", "What are the test instructions for your project?", "What license would you like to use for your project?", "What is your GitHub username?", "What is your email address?"];
+// used inquirer to prompt the user with the questions array, used input to store the answers to the name section 
 inquirer
     .prompt([
         {
@@ -52,7 +53,7 @@ inquirer
             name: 'email',
         },
     ])
-
+    // used a then to store the answers to the questions in a const called readme, used a template literal to store the answers to the questions in the readme const
     .then((response) => {
         const readme = `# ${response.title}
     ## Description
@@ -69,13 +70,13 @@ inquirer
     ${response.license}
     ## Questions
     If you have any questions, please contact me at ${response.email} or visit my GitHub page at ${response.github}.`;
+        // used fs to write the readme const to a file called README.md
         fs.writeFile('README.md', readme, (err) =>
             err ? console.log(err) : console.log('Success!')
         );
     });
 
-
-// TODO: Create a function to initialize app
+// function to run the inquirer prompt when index.js is run
 function init() {
     inquirer.prompt
 }
