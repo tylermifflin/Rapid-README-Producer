@@ -57,6 +57,12 @@ inquirer
         const readme = `# ${response.title}
     ## Description
     ${response.description}
+    ## Installation
+    ${response.installation}
+    ## Usage
+    ${response.usage}
+    ## Contribution
+    ${response.contribution}
 
 
 // TODO: Create a function to initialize app
