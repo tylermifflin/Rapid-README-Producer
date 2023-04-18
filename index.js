@@ -53,10 +53,11 @@ inquirer
         },
     ])
 
-// TODO: Create a function to write README file
-function createReadMe('README.md', data) {
+    .then((response) => {
+        const readme = `# ${response.title}
+    ## Description
+    ${response.description}
 
-}
 
 // TODO: Create a function to initialize app
 function init() {}
