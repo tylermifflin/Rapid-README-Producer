@@ -63,6 +63,14 @@ inquirer
     ${response.usage}
     ## Contribution
     ${response.contribution}
+    ## Test
+    ${response.test}
+    ## License
+    ${response.license}
+    ## Questions
+    If you have any questions, please contact me at ${response.email} or visit my GitHub page at ${response.github}.`;
+    
+
 
 
 // TODO: Create a function to initialize app
