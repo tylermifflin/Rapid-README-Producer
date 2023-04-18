@@ -11,6 +11,16 @@ inquirer
             message: questions[0],
             name: 'title',
         },
+        {
+            type: 'input',
+            message: questions[1],
+            name: 'description',
+        },
+        {
+            type: 'input',
+            message: questions[2],
+            name: 'installation',
+        },
 
 // TODO: Create a function to write README file
 function createReadMe('README.md', data) {
