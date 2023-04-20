@@ -2,7 +2,7 @@
     ## Description
     test
     ## License
-    NA
+    Na
     ## Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
@@ -18,4 +18,4 @@
     ## Test
     test
     ## Questions
-    If you have any questions or want to report any issues, please contact me at tyler.mifflin1@hotmail.com or visit my GitHub page at https://github.com/tylermifflin/Rapid-README-Producer.
+    If you have any questions or want to report any issues, please contact me at tyler.mifflin1@hotmail.com or visit my GitHub page at tylermifflin.

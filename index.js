@@ -1,6 +1,7 @@
 // added const for inquirer and fs in order to call and use them in my code to write a README file
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // created a const for the questions array to be used in the inquirer prompt
 const questions = ["What is the title of your project?", "What is the description of your project?", "What are the installation instructions for your project?", "What are the usage instructions for your project?", "What are the contribution guidelines for your project?", "What are the test instructions for your project?", "What license would you like to use for your project?", "What is a link to your GitHub profile?", "What is your email address?"];
@@ -84,7 +85,7 @@ inquirer
 
 // function to run the inquirer prompt when index.js is run
 function init() {
-    inquirer.prompt
+    inquirer.prompt 
 }
 
 // Function call to initialize app
