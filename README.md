@@ -24,4 +24,4 @@ I am open to any contributions that will make my code more effective and effecie
 ## Tests
 The user can test this project by downloaded the repository to their local machine, installing the necessary packages and running node index.js in the integrated terminal in that file.
 ## Questions
-If you have any questions, please contact me at [tyler.mifflin1@hotmail.com](mailto:tyler.mifflin1@hotmail.com) or visit my [GitHub profile](tylermifflin)
+If you have any questions, please contact me at [tyler.mifflin1@hotmail.com](mailto:tyler.mifflin1@hotmail.com) or visit my [GitHub profile](https://github.com/tylermifflin)
