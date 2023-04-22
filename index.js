@@ -4,7 +4,7 @@ const fs = require('fs');
 //const generateMarkdown = require('./generateMarkdown.js')
 
 // created a const for the questions array to be used in the inquirer prompt
-const questions = ["What is the title of your project?", "What is the description of your project?", "What are the installation instructions for your project?", "What are the usage instructions for your project?", "What are the contribution guidelines for your project?", "What are the test instructions for your project?", "What license would you like to use for your project?", "What is your GitHub username?", "What is your email address?"];
+const questions = ["What is the title of your project?", "What is the description of your project, what was your motivation, why did you build it, what problem does it solve, and what did you learn?", "What are the installation instructions for your project?", "What are the usage instructions for your project?", "What are the contribution guidelines for your project?", "What are the test instructions for your project?", "What license would you like to use for your project?", "What is your GitHub username?", "What is your email address?"];
 // used inquirer to prompt the user with the questions array, used input to store the answers to the name section 
 inquirer
     .prompt([

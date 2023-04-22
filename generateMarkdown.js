@@ -51,7 +51,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(response) {
     return `# ${response.title}
 ${renderLicenseBadge(response.license)}
-## Table-of-Contents
+## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -59,19 +59,19 @@ ${renderLicenseBadge(response.license)}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-## [Description](#table-of-contents)
+## Description
 ${response.description}
-## [Installation](#table-of-contents)
+## Installation
 ${response.installation}
-## [Usage](#table-of-contents)
+## Usage
 ${response.usage}
-## [License](#table-of-contents)
+## License
 ${renderLicenseSection(response.license)}
-## [Contributing](#table-of-contents)
+## Contributing
 ${response.contribution}
-## [Tests](#table-of-contents)
+## Tests
 ${response.test}
-## [Questions](#table-of-contents)
+## Questions
 If you have any questions, please contact me at [${response.email}](mailto:${data.email})or visit my [GitHub profile](${response.github})
 `;
 }
