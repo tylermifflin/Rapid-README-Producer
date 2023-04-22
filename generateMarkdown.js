@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// created a function to return the license badge based on which license the user chooses, and includes a link to the license
 function renderLicenseBadge(license) {
     if (license === 'MIT') {
         return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -14,25 +13,7 @@ function renderLicenseBadge(license) {
     }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-    if (license === 'MIT') {
-        return 'https://opensource.org/licenses/MIT';
-    } else if (license === 'Apache 2.0') {
-        return 'https://opensource.org/licenses/Apache-2.0';
-    } else if (license === 'GPL 3.0') {
-        return 'https://www.gnu.org/licenses/gpl-3.0';
-    } else if (license === 'BSD 3') {
-        return 'https://opensource.org/licenses/BSD-3-Clause';
-    } else {
-        return '';
-    }
-
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// created a funtion to add a description of the license to the readme based on which license the user chooses
 function renderLicenseSection(license) {
     if (license === 'MIT') {
         return 'Licensed under the MIT license.';
@@ -47,7 +28,9 @@ function renderLicenseSection(license) {
     }
 }
 
-// Function to generate markdown for README
+// Function to generate markdown for README, used template literals to return the readme const, used the response data from the inquirer prompt to fill in the sections of the readme
+// set up the table of contents to link to the sections of the readme, set up my email and github to be links
+// used the renderLicenseBadge and renderLicenseSection functions to add the license badge with a link to the licens, and description of the license to the readme
 function generateMarkdown(response) {
     return `# ${response.title}
 ${renderLicenseBadge(response.license)}
@@ -75,7 +58,5 @@ ${response.test}
 If you have any questions, please contact me at [${response.email}](mailto:${response.email}) or visit my [GitHub profile](${response.github})
 `;
 }
-
-
-
+// exported the generateMarkdown function to be used in index.js
 module.exports = generateMarkdown;
