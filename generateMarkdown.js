@@ -72,6 +72,9 @@ ${response.contribution}
 ## [Tests](#table-of-contents)
 ${response.test}
 ## [Questions](#table-of-contents)
+If you have any questions, please contact me at [${response.email}](mailto:${data.email})or visit my [GitHub profile](${response.github})
+`;
+}
 
 
 
