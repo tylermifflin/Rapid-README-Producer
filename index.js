@@ -1,7 +1,7 @@
-// added const for inquirer and fs in order to call and use them in my code to write a README file
+// added const for inquirer, fs, and generateMarkdown in order to call and use them in my code to write a README file
 const inquirer = require('inquirer');
 const fs = require('fs');
-//const generateMarkdown = require('./generateMarkdown.js')
+const generateMarkdown = require('./generateMarkdown.js')
 
 // created a const for the questions array to be used in the inquirer prompt
 const questions = ["What is the title of your project?", "What is the description of your project, what was your motivation, why did you build it, what problem does it solve, and what did you learn?", "What are the installation instructions for your project?", "What are the usage instructions for your project?", "What are the contribution guidelines for your project?", "What are the test instructions for your project?", "What license would you like to use for your project?", "What is your GitHub username?", "What is your email address?"];
@@ -56,9 +56,9 @@ inquirer
         },
     ])
     // function to write the readme file
-    
-    
         // used fs to write the readme const to a file called README.md
+    .then((response) => {
+        const readme = generateMarkdown(response);
         fs.writeFile('README.md', readme, (err) =>
             err ? console.log(err) : console.log('Success!')
         );
