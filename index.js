@@ -66,7 +66,7 @@ inquirer
 
 // function to run the inquirer prompt when index.js is run
 function init() {
-    inquirer.prompt 
+    inquirer.prompt
 }
 
 // Function call to initialize app
