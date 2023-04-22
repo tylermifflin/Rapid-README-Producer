@@ -39,9 +39,10 @@ inquirer
             name: 'test',
         },
         {
-            type: 'input',
+            type: 'list',
             message: questions[6],
             name: 'license',
+            choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
         },
         {
             type: 'input',
