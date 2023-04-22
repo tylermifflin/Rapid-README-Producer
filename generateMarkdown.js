@@ -47,4 +47,32 @@ function renderLicenseSection(license) {
     }
 }
 
+// Function to generate markdown for README
+function generateMarkdown(response) {
+    return `# ${response.title}
+${renderLicenseBadge(response.license)}
+## Table-of-Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+## [Description](#table-of-contents)
+${response.description}
+## [Installation](#table-of-contents)
+${response.installation}
+## [Usage](#table-of-contents)
+${response.usage}
+## [License](#table-of-contents)
+${renderLicenseSection(response.license)}
+## [Contributing](#table-of-contents)
+${response.contribution}
+## [Tests](#table-of-contents)
+${response.test}
+## [Questions](#table-of-contents)
+
+
+
 module.exports = generateMarkdown;

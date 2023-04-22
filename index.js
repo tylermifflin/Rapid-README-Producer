@@ -54,29 +54,9 @@ inquirer
             name: 'email',
         },
     ])
-    // used a then to store the answers to the questions in a const called readme, used a template literal to store the answers to the questions in the readme const
-    .then((response) => {
-        const readme = `# ${response.title}
-    ## Description
-    ${response.description}
-    ## License
-    ${response.license}
-    ## Table-of-Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contribution](#contribution)
-    * [Test](#test)
-    * [Questions](#questions)
-    ## [Installation](#Table-of-Contents)
-    ${response.installation}
-    ## [Usage](#Table-of-Contents)
-    ${response.usage}
-    ## [Contribution](#Table-of-Contents)
-    ${response.contribution}
-    ## [Test](#Table-of-Contents)
-    ${response.test}
-    ## [Questions](#Table-of-Contents)
-    If you have any questions or want to report any issues, please contact me at [Email: ${response.email}](mailto: ${response.email}) or visit my [GitHub page](https://github.com/${response.github}).`;
+    // function to write the readme file
+    
+    
         // used fs to write the readme const to a file called README.md
         fs.writeFile('README.md', readme, (err) =>
             err ? console.log(err) : console.log('Success!')
