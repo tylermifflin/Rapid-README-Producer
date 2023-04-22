@@ -55,7 +55,7 @@ ${response.contribution}
 ## Tests
 ${response.test}
 ## Questions
-If you have any questions, please contact me at [${response.email}](mailto:${response.email}) or visit my [GitHub profile](${response.github})
+If you have any questions, please contact me at [${response.email}](mailto:${response.email}) or visit my [GitHub profile](https://github.com/${response.github})
 `;
 }
 // exported the generateMarkdown function to be used in index.js
